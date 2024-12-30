@@ -105,9 +105,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a6d20f57fb42f874e6a7a281bdfa1ed20" id="r_a6d20f57fb42f874e6a7a281bdfa1ed20"><td class="memItemLeft" align="right" valign="top">GooeySlider *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gooey__slider_8h.html#a6d20f57fb42f874e6a7a281bdfa1ed20">GooeySlider_Add</a> (GooeyWindow *win, int x, int y, int width, long min_value, long max_value, bool show_hints, void(*callback)(long value))</td></tr>
 <tr class="memdesc:a6d20f57fb42f874e6a7a281bdfa1ed20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a slider to the window.  <br /></td></tr>
 <tr class="separator:a6d20f57fb42f874e6a7a281bdfa1ed20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10321bbffd67bf445cd9ae9ce4fd0a43" id="r_a10321bbffd67bf445cd9ae9ce4fd0a43"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gooey__slider_8h.html#a10321bbffd67bf445cd9ae9ce4fd0a43">GooeySlider_HandleDrag</a> (GooeyWindow *win, int x, int y, GooeyEventType type)</td></tr>
-<tr class="memdesc:a10321bbffd67bf445cd9ae9ce4fd0a43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles slider drag events.  <br /></td></tr>
-<tr class="separator:a10321bbffd67bf445cd9ae9ce4fd0a43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75c66d951661f37d1366d53053468308" id="r_a75c66d951661f37d1366d53053468308"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gooey__slider_8h.html#a75c66d951661f37d1366d53053468308">GooeySlider_HandleDrag</a> (GooeyWindow *win, GooeyEvent *event)</td></tr>
+<tr class="memdesc:a75c66d951661f37d1366d53053468308"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles slider drag events.  <br /></td></tr>
+<tr class="separator:a75c66d951661f37d1366d53053468308"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd6d9b702d0761fe0e8e638475e9d993" id="r_abd6d9b702d0761fe0e8e638475e9d993"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gooey__slider_8h.html#abd6d9b702d0761fe0e8e638475e9d993">GooeySlider_GetValue</a> (GooeySlider *slider)</td></tr>
 <tr class="memdesc:abd6d9b702d0761fe0e8e638475e9d993"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current value of the slider.  <br /></td></tr>
 <tr class="separator:abd6d9b702d0761fe0e8e638475e9d993"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -243,8 +243,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a10321bbffd67bf445cd9ae9ce4fd0a43" name="a10321bbffd67bf445cd9ae9ce4fd0a43"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a10321bbffd67bf445cd9ae9ce4fd0a43">&#9670;&#160;</a></span>GooeySlider_HandleDrag()</h2>
+<a id="a75c66d951661f37d1366d53053468308" name="a75c66d951661f37d1366d53053468308"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75c66d951661f37d1366d53053468308">&#9670;&#160;</a></span>GooeySlider_HandleDrag()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -258,20 +258,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>y</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">GooeyEventType&#160;</td>
-          <td class="paramname"><em>type</em>&#160;</td>
+          <td class="paramtype">GooeyEvent *&#160;</td>
+          <td class="paramname"><em>event</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

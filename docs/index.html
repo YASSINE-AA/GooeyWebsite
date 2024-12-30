@@ -94,10 +94,11 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p align="center"><a class="anchor" id="md_readme"></a></p>
-<p><img src="https://raw.githubusercontent.com/YASSINE-AA/GooeyDocs/6909ee12d6265d54671ad0eb570584db5e1f2455/gooey.png" alt="" width="128" class="inline"/> </p>
+<p><img src="gooey.png" alt="" width="128" class="inline"/> </p>
 <h1><a class="anchor" id="autotoc_md0"></a>
 Gooey GUI Library</h1>
 <p>Gooey is a lightweight and feature-rich GUI (Graphical User Interface) library originally designed for X11 environments but now cross-platform. It provides a range of customizable widgets and layouts for creating responsive and modern desktop applications. The library is optimized for simplicity and offers a flexible API for developers.</p>
+<p><img src="showcase_glfw_white.png" alt="" width="300" class="inline"/> </p>
 <h2><a class="anchor" id="autotoc_md1"></a>
 Features</h2>
 <ul>
@@ -133,6 +134,21 @@ Features</h2>
 </ul>
 <h2><a class="anchor" id="autotoc_md2"></a>
 Getting Started</h2>
+<ol type="1">
+<li>Clone repo <div class="fragment"><div class="line">git clone https://github.com/YASSINE-AA/GooeyGUI.git</div>
+</div><!-- fragment --></li>
+<li>Update submodules: <div class="fragment"><div class="line">git submodule update --init --force --remote</div>
+</div><!-- fragment --></li>
+<li>Apply patches: <div class="fragment"><div class="line">./scripts/apply-cjson-submodule-patch.sh </div>
+</div><!-- fragment --></li>
+<li>Init Cmake <div class="fragment"><div class="line">cmake -S . -B build</div>
+<div class="line">cd build </div>
+<div class="line">make all</div>
+</div><!-- fragment --></li>
+<li>Run example <div class="fragment"><div class="line">cp examples/roboto.ttf build/</div>
+<div class="line">./example_basic</div>
+</div><!-- fragment --> </li>
+</ol>
 <h3><a class="anchor" id="autotoc_md3"></a>
 Prerequisites</h3>
 <p>Ensure your development environment includes:</p><ul>
